@@ -1,0 +1,156 @@
+element.style {
+}
+<style>
+.jus-menubar-header .jus-menubar-title {
+    font-weight: 700;
+    padding: 8px;
+}
+<style>
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+<style>
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+<style>
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.jus-catplus-theme #jus-layout-menu .p-panelmenu .p-panelmenu-header>a:focus {
+    box-shadow: 0 0 0 .2rem #b7122a80;
+}
+<style>
+.jus-catplus-theme #jus-layout-menu .p-panelmenu-header>a {
+    padding: 6px 8px;
+    background-color: #fff;
+    color: #212121;
+}
+<style>
+.p-panelmenu .p-panelmenu-header:not(.p-highlight):not(.p-disabled)>a:hover {
+    background: #dbdbdb;
+    border-color: #dbdbdb;
+    color: #333;
+}
+<style>
+.jus-layout-menu .p-panelmenu-header a:first-child {
+    border-bottom-color: #d6d6d6;
+}
+<style>
+.jus-layout-menu .p-panelmenu-header a.p-menuitem-link-active {
+    font-weight: 700;
+}
+<style>
+.p-panelmenu .p-panelmenu-header>a:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 .2rem #8dcdff;
+}
+<style>
+.p-panelmenu .p-panelmenu-header-link:focus {
+    z-index: 1;
+}
+<style>
+.jus-layout-menu .p-panelmenu-header a {
+    background-color: #e5e7ea;
+    color: #555;
+    border-radius: 0;
+    border-color: transparent;
+    padding: 8px 16px;
+}
+<style>
+.jus-layout-menu .p-panelmenu-header>a {
+    font-weight: 400;
+}
+<style>
+.p-panelmenu .p-panelmenu-header>a {
+    padding: .857rem 1rem;
+    border: 1px solid #c8c8c8;
+    color: #333;
+    background: #f4f4f4;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: background-color .2s, box-shadow .2s;
+}
+<style>
+.p-panelmenu .p-panelmenu-header-link {
+    display: flex
+;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+<style>
+.jus-catplus-theme a {
+    color: #0c3ce8;
+}
+<style>
+a, a:hover {
+    text-decoration: none;
+}
+<style>
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+<style>
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+<style>
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+<style>
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+<style>
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+<style>
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+<style>
+*, :after, :before {
+    box-sizing: border-box;
+}
+hoja de estilo del agente de usuario
+a:-webkit-any-link:focus-visible {
+    outline-offset: 1px;
+}
+hoja de estilo del agente de usuario
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+hoja de estilo del agente de usuario
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+}
