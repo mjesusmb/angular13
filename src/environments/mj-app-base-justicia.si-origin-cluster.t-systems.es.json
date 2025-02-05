@@ -1,0 +1,32 @@
+{
+    "import": [
+        "app/core/config/log.json",
+        "app/core/config/cache.json",
+        "app/shared/i18n/lang_ca.json",
+        "app/shared/i18n/lang_es.json",
+        "app/shared/i18n/justicia-ng-lang_ca.json",
+        "app/shared/i18n/justicia-ng-lang_es.json"
+    ],
+    "security": {
+        "token": {
+            "endpoint": "http://justicia-portal-service-justicia.si-origin-cluster.t-systems.es/api/v1/auth/login",
+            "revoke": "",
+            "jwt": {
+                "checkToken": {
+                    "endpoint": "http://justicia-portal-service-justicia.si-origin-cluster.t-systems.es/api/v1/auth/refresh"
+                }
+            }
+        },
+        "profile": {
+            "endpoint": ""
+        }
+    },
+    "api": {
+        "baseUrl": "http://justicia-agenda-service-justicia.si-origin-cluster.t-systems.es/api/v1",
+        "cc": {
+            "tra": {
+                "baseUrl": "http://justicia-agenda-service-justicia.si-origin-cluster.t-systems.es/api/v1"
+            }
+        }
+    }
+}

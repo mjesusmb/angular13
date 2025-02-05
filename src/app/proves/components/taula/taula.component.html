@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-2">
+            <a href="#" [routerLink]="['/']"><i class="fa fa-chevron-left mr-1"></i>Tornar</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 py-3">
+            <jus-taula-dades
+                #taulaDades
+                [columns]="cols"
+                [value]="resultatLlistat"
+                [loading]="loading"
+                [lazy]="true"
+                (onLazyLoad)="onLazy($event)"
+                [reorderableColumns]="true"
+                [resizableColumns]="false"
+                [paginator]="true"
+                [rows]="rowsPerPagina"
+                selectionMode="multiple"
+                [checkboxes]="true"
+                [botonera]="jusBotoneraAccio"
+                [capcalera]="capcaleraTaula"
+                (onClickExportacioPDF)="onClickExportaCSV11()"
+                (onClickExportacioCSV)="onClickExportaCSV1()"
+                [dataKey]="'idSollicitud'"
+                [totalRecords]="totalRecords"
+                (onHeaderCheckboxToggle)="onHeaderCheckboxToggle($event)"
+                (onSelectionChange)="onCanviSeleccio($event)"
+                [columns]="columnOptions"
+                [id]="'prova_id_taula'"
+            >
+            </jus-taula-dades>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 py-3">
+            <jus-taula-dades
+                #taulaDades2
+                [columns]="cols2"
+                [value]="resultatLlistat2"
+                [loading]="loading"
+                [lazy]="true"
+                (onLazyLoad)="onLazy2($event)"
+                [reorderableColumns]="true"
+                [resizableColumns]="false"
+                [paginator]="true"
+                [rows]="rowsPerPagina2"
+                selectionMode="multiple"
+                [checkboxes]="true"
+                [botonera]="jusBotoneraAccio2"
+                [capcalera]="capcaleraTaula2"
+                [dataKey]="'idSollicitud'"
+                [totalRecords]="totalRecords2"
+                (onHeaderCheckboxToggle)="onHeaderCheckboxToggle2($event)"
+                (onSelectionChange)="onCanviSeleccio2($event)"
+                (onClickExportacioCSV)="onClickExportaCSV1()"
+                [columns]="columnOptions2"
+            >
+            </jus-taula-dades>
+        </div>
+    </div>
+</div>

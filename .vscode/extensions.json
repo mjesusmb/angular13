@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "angular.ng-template",
+        "johnpapa.angular2",
+        "formulahendry.auto-close-tag",
+        "nrwl.angular-console",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "coenraads.bracket-pair-colorizer",
+        "steoates.autoimport",
+        "sonarsource.sonarlint-vscode",
+    ]
+}

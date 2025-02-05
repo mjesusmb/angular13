@@ -1,0 +1,103 @@
+<form #formPR="ngForm" id="formPR" role="form" name="formPR" (keydown)="onKeyDown()">
+    <div class="container">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"></div>
+        <div class="row">
+            <div class="col-12 my-1">
+                <jus-capcalera-pagina titol="Inputs" [tipusCapcalera]="JusTipusCapcaleraEnum.NomesAjuda" [contingutHTML]="textAjuda"> </jus-capcalera-pagina>
+            </div>
+            <div class="col-12 my-1">
+                <div id="jus-panell-principal">
+                    <p-panel [collapsed]="filtresCollapsed" class="p-fluid" header="{{ 'ui.consultaSollicitud.title.sollicitud' | translate }}" [toggleable]="true">
+                        <div class="row">
+                            <div class="col-3 col-m-6">
+                                <label class="jus-label" for="id_dropdown">Justicia Dropdown:</label>
+                                <jus-dropdown
+                                    #jusDD
+                                    [options]="options"
+                                    id="id_dropdown"
+                                    [required]="true"
+                                    [(ngModel)]="selected"
+                                    (onChange)="canviDropdown($event)"
+                                    placeholder="prueba"
+                                    name="name_dropdown"
+                                ></jus-dropdown>
+                            </div>
+                            <div class="col-3 col-m-6">
+                                <label class="jus-label" for="id_dropdown2">Justicia Dropdown:</label>
+                                <jus-dropdown
+                                    #jusDD
+                                    [options]="options"
+                                    id="id_dropdown2"
+                                    name="dd2"
+                                    [required]="true"
+                                    [disabled]="disabledSel2"
+                                    [(ngModel)]="selected2"
+                                ></jus-dropdown>
+                            </div>
+                            <div class="col-3 col-m-6">
+                                <label class="jus-label" for="dataAltaDesDe">p-calendar:</label>
+                                <p-calendar
+                                    inputId="dataAltaDesDe"
+                                    [monthNavigator]="true"
+                                    [yearNavigator]="true"
+                                    class=""
+                                    title="data des de [dd/mm/aaaa]"
+                                    name="dataAltaDesDe"
+                                    [(ngModel)]="dataAltaDesDe"                               
+                                    [showOnFocus]="false"
+                                    dateFormat="dd/mm/yy"
+                                    [showIcon]="true"
+                                    yearRange="2000:2040"
+                                    placeholder="dd/mm/yyyy"
+                                    firstDayOfWeek="1"
+                                ></p-calendar>
+                            </div>
+                        </div>
+                    </p-panel>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-1">
+                <p-panel
+                    [collapsed]="filtresCollapsed"
+                    class="p-fluid jus-panell-amaga-toggle"
+                    header="{{ 'ui.consultaSollicitud.title.sollicitudRemota' | translate }}"
+                    [toggleable]="true"
+                >
+                    <div class="row">
+                        <div class="col-3 col-m-6">
+                            <label class="jus-label" for="numSollicitudRemota">{{ 'ui.consultaSollicitud.sol.rem.numero.sol.rem' | translate }}:</label>
+                            <input
+                                id="numSollicitudRemota"
+                                name="numSollicitudRemota"
+                                [(ngModel)]="numSollicitudRemota"
+                                class="jus-input p-inputtext"
+                                type="text"
+                                jusEnter
+                                placeholder="{{ 'ui.consultaSollicitud.sol.rem.numero.sol.rem' | translate }}"
+                                maxlength="50"
+                                pInputText
+                            />
+                        </div>
+                        <div class="col-4">
+                            <span class="jus-label" for="ckNomesRemotes" aria-hidden="true">&nbsp;</span>
+                            <p-checkbox
+                                binary="true"
+                                inputId="ckNomesRemotes"
+                                name="ckNomesRemotes"
+                                [(ngModel)]="indSollicitudRemota"
+                                label="{{ 'ui.consultaSollicitud.sol.rem.ind.numes.rem' | translate }}"
+                            ></p-checkbox>
+                        </div>
+                    </div>
+                </p-panel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-1">
+                <jus-botonera [jusBotons]="jusBotons" (onClickBotonera)="clickBotonera($event)"></jus-botonera>
+            </div>
+        </div>
+    </div>
+</form>

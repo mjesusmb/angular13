@@ -1,0 +1,11 @@
+// Estils que només s'aplicaran en desenvolupament local
+
+@import 'sass/variables';
+@import 'sass/fonts';
+@import 'sass/toastr';
+@import 'sass/spinner';
+@import 'sass/justicia-ng-overrides';
+
+html {
+    height: 100%;
+}

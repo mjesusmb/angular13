@@ -1,0 +1,21 @@
+<p-dialog [visible]="showProgress" id="dialegProgress" modal="true" minWidth="500" styleClass="jus-dialeg dialeg-top"
+    [closable]="false" [closeOnEscape]="false" [dismissableMask]="false" [style]="{'width':'700px' }">
+    <p-header>
+        <span class="m-l-2 m-t-1 dialog-header">
+            <span class="fa fa-cog fa-spin"></span>
+            <span class="m-l-1">{{title}}</span>
+        </span>
+    </p-header>
+    <div class="jus-row">
+        <div class="jus-col-12">
+            <p-progressBar [value]="progressValue" [showValue]="true"></p-progressBar>
+        </div>
+    </div>
+    <div class="jus-row row-separator">&nbsp;</div>
+    <div class="jus-row">
+        <div class="jus-col-12">
+            <span class="fa fa-pencil faa-horizontal animated fa-fw" role="alert" aria-busy="true"></span>
+            <span class="text-bold">{{infoText}}</span>
+        </div>
+    </div>
+</p-dialog>

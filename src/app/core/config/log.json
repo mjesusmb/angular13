@@ -1,0 +1,30 @@
+{
+    "serviceName": "log",
+    "config": [
+        {
+            "name": "root",
+            "level": "DEBUG",
+            "layout": {
+                "type": "JsonLayout",
+                "params": {
+                    "readable": false,
+                    "combineMessages": false
+                }
+            },
+            "additivity": false,
+            "appenders": ["BrowserConsoleAppender"]
+        },
+        {
+            "name": "app",
+            "level": "DEBUG",
+            "layout": {
+                "type": "PatternLayout",
+                "params": {
+                    "pattern": "%d{HH:mm:ss} %-5p - %m%n"
+                }
+            },
+            "additivity": false,
+            "appenders": ["BrowserConsoleAppender"]
+        }
+    ]
+}

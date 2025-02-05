@@ -1,0 +1,12 @@
+// Estils globals que s'aplicaran en mode Microfrontend
+// IMPORTANT: Verificar que els estils afegits en aquest fitxer són
+//            compatibles amb els de l'aplicació principal
+
+
+.jus-layout-mfe-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 !important;
+}

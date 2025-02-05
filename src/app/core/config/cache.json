@@ -1,0 +1,35 @@
+{
+    "serviceName": "cache",
+    "config": [
+        {
+            "name": "AVS",
+            "options": {
+                "maxAge": 43200000,
+                "deleteOnExpire": "aggressive",
+                "recycleFreq": 600000,
+                "storageMode": "localStorage",
+                "storageSuffix": false
+            }
+        },
+        {
+            "name": "session",
+            "options": {
+                "maxAge": 3600000,
+                "deleteOnExpire": "aggressive",
+                "recycleFreq": 600000,
+                "storageMode": "sessionStorage",
+                "storageSuffix": false
+            }
+        },
+        {
+            "name": "memory",
+            "options": {
+                "maxAge": 3600000,
+                "deleteOnExpire": "aggressive",
+                "recycleFreq": 600000,
+                "storageMode": "memory",
+                "storageSuffix": false
+            }
+        }
+    ]
+}

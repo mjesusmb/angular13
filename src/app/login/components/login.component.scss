@@ -1,0 +1,150 @@
+/*
+  logo generalitat
+*/
+
+.middle {
+    text-align: center;
+}
+
+.services-section img {
+    //width: 25vh;
+    display: block;
+    text-align: center; //height: 100px;
+}
+
+.card {
+    border-color: #efefef;
+    -webkit-box-shadow: 11px 10px 5px -5px rgba(230, 230, 230, 1);
+    -moz-box-shadow: 11px 10px 5px -5px rgba(230, 230, 230, 1);
+    box-shadow: 11px 10px 5px -5px rgba(230, 230, 230, 1);
+    width: 100%;
+}
+
+.list-group-item:focus,
+.list-group-item:hover {
+    z-index: 0;
+    text-decoration: none;
+}
+
+/*
+// Input styles effect
+*/
+
+* * {
+    box-sizing: border-box;
+}
+
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+}
+
+.inp .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #9098a9;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+}
+
+.inp .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #07f;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+}
+
+.inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #c8ccd4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+    transition: all 0.15s ease;
+}
+
+.inp input:hover {
+    background: rgba(34, 50, 84, 0.03);
+}
+
+.inp input:not(:placeholder-shown) + span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+    background: none;
+    outline: none;
+}
+
+.inp input:focus + span {
+    color: #bd0000;
+    transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus + span + .border {
+    transform: scaleX(1);
+}
+
+/*
+// Fin Input styles effect
+*/
+
+.text-contasenya {
+    border: none;
+    display: table;
+    padding: 15px;
+    font-size: 0.688em;
+}
+
+.text-footer {
+    list-style: none;
+    padding: 15px;
+    font-size: 0.688em;
+    color: #999999;
+}
+
+.text-footer-text {
+    display: table;
+    padding: 15px;
+    font-size: 0.688em;
+    color: #999999;
+}
+
+.text-footer-title {
+    font-size: 0.788em;
+    color: #333;
+    font-family: 'OpenSansRegular",Helvetica,Arial,sans-serif';
+}
+
+.line-red {
+    border-top: 1px solid red;
+    background-color: #efefef;
+}
+
+.button-acces {
+    width: 240px;
+    background-color: #bd0000;
+}
+
+.button-certificat {
+    width: 240px;
+    background: #333333;
+}

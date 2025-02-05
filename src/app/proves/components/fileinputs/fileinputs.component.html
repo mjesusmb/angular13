@@ -1,0 +1,27 @@
+
+<form #formPR="ngForm" id="formPR" role="form" name="formPR" (keydown)="onKeyDown()">
+    <div class="container">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"></div>
+        <div class="row">
+            <jus-fileupload
+            [chooseLabel]="jusFileUploadElement.chooseLabel"
+            [mode]="jusFileUploadElement.mode"
+            [name]="jusFileUploadElement.name"
+            [id]="jusFileUploadElement.id"
+            [customUpload]="jusFileUploadElement.customUpload"
+            [multiple]="jusFileUploadElement.multiple"
+            [showUploadButton]="jusFileUploadElement.showUploadButton"
+            [showCancelButton]="jusFileUploadElement.showCancelButton"
+            [fileLimit]="jusFileUploadElement.fileLimit"
+            [maxFileSize]="jusFileUploadElement.maxFileSize"
+            [accept]="jusFileUploadElement.accept"
+            [required]="jusFileUploadElement.required"
+            (onSelect)="onSelectJusFileUpload($event)"
+            (onUploadHandler)="onUploadHandler($event)"
+            (onError)="onErrorJusFileUpload($event)"
+        ></jus-fileupload>
+            
+        </div>
+        
+    </div>
+</form>

@@ -1,0 +1,12 @@
+<div *ngFor="let avis of avisos">
+    <div class="jus-row" *ngIf="avis.titol">
+        <div class="jus-col-12">
+            <jus-capcalera-pagina titol="{{ avis.titol }}" [tipusCapcalera]="tipusCapcalera" [contingutHTML]=""></jus-capcalera-pagina>
+        </div>
+    </div>
+    <div class="jus-row" *ngIf="avis.textos">
+        <div class="jus-col-12">
+            <p *ngFor="let text of avis.textos" innerHtml="{{ text }}"></p>
+        </div>
+    </div>
+</div>

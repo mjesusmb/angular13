@@ -1,0 +1,17 @@
+<div class="jus-app-container jus-catplus-theme">
+    <div class="jus-layout-main">
+        <div class="jus-app-page-wrapper">
+            <app-sidebar [ngClass]="{ 'side-menu-active': sideMenuVisible, 'side-menu-inactive': !sideMenuVisible }"></app-sidebar>
+            <div class="jus-app-page-content">
+                <jus-missatges [sticky]="false" [life]="5000" #jusMissatges></jus-missatges>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<rang-spinner-rx #spinner [maxTime]="config.ui.spinner.maxTime">
+    <ng-template>
+        <div [ngStyle]="{ display: spinner.isActive ? 'block' : 'none', position: 'fixed' }" class="app-spinner app-spinner-hover app-spinner-backdrop-blur"></div>
+    </ng-template>
+</rang-spinner-rx>

@@ -1,0 +1,11 @@
+<form #formTTA="ngForm" id="formTTA" role="form" name="formTTA" (keydown)="onKeyDown()">
+    <div class="container">
+        <div class="py-3"></div>
+
+        <div class="jus-row">
+            <div class="jus-col-12 py-3">
+                <jus-botonera [jusBotons]="jusBotons" (onClickBotonera)="clickBotonera($event)"></jus-botonera>
+            </div>
+        </div>
+    </div>
+</form>
