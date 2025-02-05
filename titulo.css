@@ -1,0 +1,100 @@
+<h3 class="my-3 ng-tns-c145-3">Multijurisdicció / Microfrontend / Pàgina inicial</h3>
+
+element.style {
+}
+<style>
+.jus-catplus-theme h1, .jus-catplus-theme h2, .jus-catplus-theme h3, .jus-catplus-theme h4, .jus-catplus-theme h5, .jus-catplus-theme h6 {
+    margin-bottom: 0;
+}
+<style>
+.mb-3, .my-3 {
+    margin-bottom: 1rem !important;
+}
+<style>
+.mt-3, .my-3 {
+    margin-top: 1rem !important;
+}
+<style>
+.my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+<style>
+.mb-3, .my-3 {
+    margin-bottom: 1rem !important;
+}
+<style>
+.mt-3, .my-3 {
+    margin-top: 1rem !important;
+}
+<style>
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+<style>
+h3, .h3 {
+    font-size: 1.75rem;
+}
+<style>
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+<style>
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+<style>
+.h3, h3 {
+    font-size: 1.75rem;
+}
+<style>
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+<style>
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+<style>
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+<style>
+*, :after, :before {
+    box-sizing: border-box;
+}
+hoja de estilo del agente de usuario
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+<style>
+:root, :host {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+<style>
+:root, :host {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+body, .p-component {
+    font-family: Open Sans, Roboto, Helvetica Neue, sans-serif;
+    font-size: .8125rem;
+}
